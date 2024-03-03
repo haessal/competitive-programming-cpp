@@ -1,9 +1,9 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/cpp",
-
-    "customizations": {
-      "vscode": {
-        "extensions": ["ms-vscode.cpptools-extension-pack"]
-      }
-    },
+  "name": "competitive-programming-cpp-devcontainer",
+  "image": "mcr.microsoft.com/vscode/devcontainers/cpp",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.cpptools-extension-pack"]
+    }
   }
+}
