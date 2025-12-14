@@ -1,0 +1,10 @@
+services:
+  dev-env:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace:cached
+    environment:
+      TZ: Asia/Tokyo
+    command: /bin/sh -c "while sleep 1000; do :; done"

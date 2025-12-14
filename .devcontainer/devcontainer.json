@@ -1,9 +1,27 @@
 {
   "name": "competitive-programming-cpp-devcontainer",
-  "image": "mcr.microsoft.com/vscode/devcontainers/cpp",
+  "service": "dev-env",
+  "workspaceFolder": "/workspace",
+  "dockerComposeFile": [
+      "docker-compose.yml"
+  ],
   "customizations": {
     "vscode": {
-      "extensions": ["ms-vscode.cpptools-extension-pack"]
+      "extensions": [
+        "ms-vscode.cmake-tools",
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cpptools-themes",
+        "ms-vscode.vscode-typescript-next"
+      ],
+      "settings": {
+        "C_Cpp.default.cppStandard": "c++23",
+        "C_Cpp.default.compilerPath": "/usr/local/bin/g++"
+      }
     }
-  }
+  },
+  "containerEnv": {
+    "SHELL": "/usr/bin/bash"
+  },
+  "remoteUser": "vscode"
 }
